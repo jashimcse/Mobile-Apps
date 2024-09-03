@@ -1,0 +1,152 @@
+@font-face {
+  font-family: 'Helvetica';
+  src: url('../css/fonts/webfont/Helvetica.eot?#iefix') format('embedded-opentype'), url('../css/fonts/webfont/Helvetica.otf') format('opentype'),
+  url('../css/fonts/webfont/Helvetica.woff') format('woff'), url('../css/fonts/webfont/Helvetica.ttf') format('truetype'), url('../css/fonts/webfont/Helvetica.svg#Helvetica') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica-Light';
+  src: url('../css/fonts/webfont/Helvetica-Light.eot?#iefix') format('embedded-opentype'),
+  url('../css/fonts/webfont/Helvetica-Light.otf') format('opentype'),
+  url('../css/fonts/webfont/Helvetica-Light.woff') format('woff'), url('../css/fonts/webfont/Helvetica-Light.ttf')
+  format('truetype'), url('../css/fonts/webfont/Helvetica-Light.svg#Helvetica-Light') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Graphik Web';
+  src: url('../css/fonts/webfont/Graphik-Regular-Web.eot?#iefix') format('embedded-opentype'),
+  url('../css/fonts/webfont/Graphik-Regular-Web.ttf') format('ttf'),
+  url('../css/fonts/webfont/Graphik-Regular-Web.woff') format('woff'), url('../css/fonts/webfont/Graphik-Regular-Web.ttf') format('truetype'), url('../css/fonts/webfont/Graphik-Regular-Web.svg#Graphik-Regular-Web') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Graphik Web';
+  src: url('../css/fonts/webfont/graphik-light-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../css/fonts/webfont/graphik-light-webfont.ttf') format('ttf'),
+  url('../css/fonts/webfont/graphik-light-webfont.woff') format('woff'), url('../css/fonts/webfont/graphik-light-webfont.ttf') format('truetype'), url('../css/fonts/webfont/graphik-light-webfont.svg#graphik-light-webfont') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+
+.border{
+  width: 75px;
+  height: 4px;
+  border: 1px solid transparent !important;
+}
+.custom-btn{
+  font-family: $font-graphic;
+  font-size: $font-22;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  display: inline-block;
+  transition: all ease 500ms;
+  &:hover{
+    background-color: red;
+  }
+}
+.after {
+  position: absolute;
+  content: " ";
+  display: block;
+  background: no-repeat center center transparent;
+  background-size: cover;
+}
+
+@mixin clearfix {
+  &:before,
+  &:after{
+    content: '';
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+.padding-tb-100{
+  padding: 100px 0;
+}
+.padding-tb-50{
+  padding: 50px 0;
+}
+.padding-tb-15{
+  padding: 15px 0 !important;
+}
+
+.padding-left-0{
+  padding-left: 0;
+}
+.title-h2{
+  text-align: center;
+  //padding-top: 70px;
+  h2 {
+    margin-bottom: 15px;
+  }
+}
+.padding-btom{
+  padding: 50px 0;
+}
+.padding-top-20{
+  padding-top: 20px;
+}
+.padding-bottom-20{
+  padding-bottom: 20px;
+}
+.form-control {
+  font-weight: $font-weight-300;
+}
+.video-btn {
+  @extend .custom-btn;
+  min-width: 233px;
+  width: auto;
+  height: auto;
+  border-radius: 6px;
+  padding: 17px 25px 17px 27px;
+  text-align: left;
+  cursor: pointer;
+  .fa {
+    display: inline-block;
+    font: $fa;
+    font-size: $font-30;
+    font-weight: bold;
+    float: right;
+    margin-top: -5px;
+    margin-left: 20px;
+  }
+  .video-btn:hover{
+
+    }
+
+}
+
+  .common-title{
+    text-align: center;
+    text-transform: uppercase;
+    max-width: 660px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+
+    .app-border{
+      border:5px dashed #00b3ee;
+      width: 50px;
+      height: 6px;
+      margin: 0 auto;
+      margin-bottom: 9px;
+    }
+    span{
+      color: #00b3ee;
+      text-transform: uppercase;
+    }
+    p{
+      text-align: center;
+      font-size: 13px;
+      font-weight: normal;
+      text-transform: lowercase;
+    }
+  }

@@ -1,0 +1,93 @@
+/* ==========================================================================
+   > Responsive
+   ========================================================================== */
+@media screen and (min-width: 992px) {
+
+}
+
+@media screen and (max-width: 991px) {
+
+}
+
+@media screen and (min-width: 768px) {
+
+}
+
+@media screen and (min-width: 767px) and (max-width: 991px) {
+  .slick-next:before {
+    display: none;
+
+  }
+  .slick-prev:before {
+    display: none;
+  }
+}
+
+/* ==========================================================================
+	#Media - Tablets in landscape
+========================================================================== */
+@media (max-width: 1024px) {
+}
+
+/* ==========================================================================
+	#Phones
+========================================================================== */
+
+@media screen and (max-width: 767px) {
+  .home-service {
+    margin-top: 87px;
+    transform: skew(0deg, -11deg);
+    .single-service {
+      display: none;
+    }
+    .single-service-img {
+      img {
+        display: none;
+      }
+
+    }
+  }
+  .slick-next:before {
+    display: none;
+
+  }
+  .slick-prev:before {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .about {
+
+    .about-title {
+      max-width: 284px;
+    }
+  }
+  .skewed-bg {
+    position: relative;
+    background: #2D3E50;
+    padding: 94px 5px;
+    -webkit-transform: skew(0deg, -11deg);
+    transform: skew(0deg, -11deg);
+  }
+  .slick-next:before {
+    display: none;
+
+  }
+  .slick-prev:before {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .about {
+    min-height: 74px;
+  }
+  .slick-next:before {
+    display: none;
+
+  }
+  .slick-prev:before {
+    display: none;
+  }
+}
